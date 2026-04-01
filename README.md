@@ -113,7 +113,6 @@ Dix architectures couvrant un large spectre sont évaluées dans un premier temp
 | M9 | ResNet + Dilated Conv | 99 628 | **32,71 %** |
 | M10 | CNN + Transformer | 99 498 | 0,39 % |
 
-
 ![Résultats phase 1](output/phase1/all_runs_summary.jpeg)
 
 ---
@@ -127,6 +126,8 @@ Les trois meilleures architectures (M3, M4, M9) sont réentraînées avec un vol
 | M4 – ResNet Tiny | 31,08 % | **35,29 %** | +4,21 pp |
 | M9 – ResNet + Dilated | 32,71 % | 35,01 % | +2,30 pp |
 | M3 – CNN + BatchNorm | 29,87 % | 33,87 % | +4,00 pp |
+
+![Résultats phase 2](output/phase2/all_runs_summary.jpeg)
 
 ---
 
