@@ -79,7 +79,7 @@ L'entraînement s'appuie sur Keras/TensorFlow 2 avec la stratégie `MirroredStra
 ### Phase 1 — Exploration initiale (N = 10 000 positions)
 
 Dix architectures couvrant un large spectre sont évaluées dans un premier temps.
-
+<!--
 **M1 – MLP Baseline** repose sur un réseau entièrement connecté : l'entrée est aplatie en un vecteur de 11 191 dimensions, puis passée par trois couches denses. Aucun biais inductif spatial n'est exploité. Il sert de borne inférieure de référence et atteint 0,57 % de précision.
 
 **M2 – CNN Shallow** est un backbone de trois convolutions 3×3 (32 filtres, ReLU), sans normalisation de batch. Il constitue la référence CNN minimale et atteint 11,12 %.
@@ -99,6 +99,8 @@ Dix architectures couvrant un large spectre sont évaluées dans un premier temp
 **M9 – ResNet + Dilated Conv** est le meilleur modèle de la Phase 1 (32,71 %). Des convolutions dilatées avec taux [1, 2, 3] sont utilisées dans chaque bloc résiduel, élargissant le champ récepteur effectif jusqu'à 21×21 sans paramètres supplémentaires. Sur un plateau 19×19, chaque neurone peut ainsi voir la quasi-totalité de la grille dès les premières couches.
 
 **M10 – CNN + Transformer** combine un backbone CNN avec un bloc d'attention multi-têtes (4 têtes) sur les 361 tokens spatiaux du plateau. Sous 100k paramètres, la portion allouée à l'attention est trop contrainte et le modèle sature dès l'époque 60 (0,39 %).
+-->
+
 
 | Modèle | Architecture | Params | Acc. Phase 1 |
 |--------|-------------|--------|--------------|
