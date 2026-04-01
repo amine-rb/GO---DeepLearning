@@ -68,7 +68,7 @@ Le fichier `rapport_architectures.md` contient le code complet et documenté des
 
 ## Protocole expérimental
 
-Tous les modèles partagent la même infrastructure d'entraînement. L'optimiseur Adam est utilisé avec un taux d'apprentissage initial de 0,001, une régularisation L2 de 1e-4 et une graine aléatoire fixe (seed = 42, avec `TF_DETERMINISTIC_OPS=1` pour la reproductibilité). La taille de batch est de 128 par GPU. La précision mixte float16 est activée. L'arrêt précoce est déclenché après 20 époques sans amélioration de la perte de validation, et le taux d'apprentissage est réduit d'un facteur 0,5 après 10 époques de stagnation. Le nombre maximal d'époques est fixé à 300.
+Tous les modèles partagent la même infrastructure d'entraînement. L'optimiseur Adam est utilisé avec un taux d'apprentissage initial de 0,001. La taille de batch est de 128 par GPU. L'arrêt précoce est déclenché après 20 époques sans amélioration de la perte de validation et le taux d'apprentissage est réduit d'un facteur 0,5 après 10 époques de stagnation. Le nombre maximal d'époques est fixé à 300.
 
 L'entraînement s'appuie sur Keras/TensorFlow 2 avec la stratégie `MirroredStrategy` pour l'utilisation multi-GPU sur Kaggle Notebooks (2×T4 ou P100). Le suivi des métriques est assuré par Weights & Biases (W&B) et TensorBoard. Les checkpoints et historiques CSV sont synchronisés automatiquement vers Google Drive à la fin de chaque run.
 
