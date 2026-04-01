@@ -154,7 +154,7 @@ Quatre architectures conçues pour maximiser le rapport performance/paramètre s
 | M15 | ConvNeXt-Lite | — | 92 863 | 41,19 % † |
 | M18 | EfficientFormer-Go | MHA poolé | 99 666 | **44,56 %** |
 
-![Résultats phase 2](output/all_run_summary.jpeg)
+![Résultats phase 2](output/all_runs_summary.jpeg)
 
 ---
 
