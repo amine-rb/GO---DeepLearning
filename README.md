@@ -15,6 +15,34 @@ Le meilleur modèle atteint **44,56 % de précision politique en validation**, s
 
 ---
 
+## Structure du projet
+
+Le dépôt est organisé autour de **deux phases** (Phase 1 et Phase 2). Le code est principalement dans des **notebooks Jupyter**, et les **résultats** générés sont stockés dans `output/`.
+
+```text
+.
+├── notebook/
+│   ├── phase1.ipynb              # Expériences / entraînements - Phase 1
+│   ├── phase2.ipynb              # Expériences / entraînements - Phase 2
+│   └── rapport_architectures.md  # Notes/rapport sur les architectures testées
+├── output/
+│   ├── phase1/
+│   │   ├── all_runs_summary.csv  # Récapitulatif des runs (Phase 1)
+│   │   ├── model*/               # Dossiers générés par run (hyperparams, seed, timestamp...)
+│   │   └── résultats phase 1.jpeg
+│   └── phase2/
+│       ├── all_runs_summary.csv  # Récapitulatif des runs (Phase 2)
+│       ├── model*/               # Dossiers générés par run
+│       └── résultats phase 2.jpeg
+└── report.pdf                    # Rapport final du projet
+```
+
+### Notes
+- Les dossiers `output/phase*/model...` correspondent à des exécutions (runs) identifiées par un nom incluant souvent le modèle, les hyperparamètres, la seed et un timestamp.
+- Les fichiers `.DS_Store` sont des fichiers système macOS et peuvent être ignorés (recommandé : ajouter `.DS_Store` au `.gitignore`).
+
+---
+
 ## Résultats
 
 | Rang | Modèle | Phase | Données | Acc. politique |
