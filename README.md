@@ -113,7 +113,7 @@ Dix architectures couvrant un large spectre sont évaluées dans un premier temp
 | M9 | ResNet + Dilated Conv | 99 628 | **32,71 %** |
 | M10 | CNN + Transformer | 99 498 | 0,39 % |
 
-![Résultats phase 1](https://github.com/amine-rb/DeepLearning-for-GO/blob/main/output/phase1/résultats%20phase%201.jpeg)
+![Résultats phase 1](all_runs_summary.jpeg)
 ---
 
 ### Phase 2 — Réentraînement des top 3 (N = 50 000 positions)
