@@ -1,0 +1,5 @@
+run_name,model_id,model_name,params,best_loss,best_policy_acc,lr,seed,epochs_run,timestamp
+model3_cnn_batchnorm_lr0.001_seed42_20260329_233218,3,cnn_batchnorm,99848,3.628205,0.34022,0.001,42,174,20260329_233218
+model4_resnet_tiny_lr0.001_seed42_20260330_012956,4,resnet_tiny,99700,3.502141,0.35566,0.001,42,176,20260330_012956
+model9_resnet_dilated_lr0.001_seed42_20260330_033551,9,resnet_dilated,99700,3.445622,0.35832,0.001,42,242,20260330_033551
+model10_cnn_transformer_lr0.001_seed42_20260330_063347,10,cnn_transformer,92716,6.000129,0.00362,0.001,42,72,20260330_063347

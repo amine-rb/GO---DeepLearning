@@ -1,0 +1,20 @@
+model_id = 10
+model_name = cnn_transformer
+planes = 31
+moves = 361
+N = 50000
+epochs = 300
+batch = 256
+lr = 0.001
+l2 = 0.0001
+seed = 42
+max_params = 100000
+patience = 20
+filters = 20
+mha_heads = 4
+key_dim = 16
+dense_head = 70
+
+tf_version = 2.19.0
+gpu        = [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:1', device_type='GPU')]
+timestamp  = 20260330_063347

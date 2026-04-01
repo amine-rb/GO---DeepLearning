@@ -1,0 +1,20 @@
+model_id = 7
+model_name = mobilenet_style
+planes = 31
+moves = 361
+N = 10000
+epochs = 300
+batch = 256
+lr = 0.001
+l2 = 0.0001
+seed = 42
+max_params = 100000
+patience = 20
+filters = 16
+expand = 6
+n_blocks = 4
+dense_head = 72
+
+tf_version = 2.19.0
+gpu        = [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:1', device_type='GPU')]
+timestamp  = 20260329_174800
